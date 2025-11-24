@@ -1,2 +1,8 @@
-# FUTURE_TrackCode_02
-Krishna's Mart Ecommerce Website
+# Krishna's Mart
+
+A simple React e-commerce app using Fake Store API.
+
+### Setup
+```bash
+npm install
+npm start

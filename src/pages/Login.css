@@ -1,0 +1,108 @@
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  font-family: "Poppins", sans-serif;
+}
+
+.login-card {
+  width: 370px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  color: white;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  margin-bottom: 25px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.input-field:focus {
+  box-shadow: 0 0 10px white;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #007bff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-btn:hover {
+  background: #007bff;
+  color: white;
+}
+
+.fade-slide {
+  animation: fadeSlideUp 1.2s ease forwards;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: white;
+  color: #007bff;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  opacity: 0;
+  animation: fadeToast 3s ease;
+}
+
+@keyframes fadeToast {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
